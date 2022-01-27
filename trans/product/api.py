@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.debug = True
 glob_a = {}
 glob_send = {}
-list_email={'se7en.msk@gmail.com':"0x07268d7b3e591D2eD547840aEbA16d4B70E77777","test":"ETH",'alexvozg@gmail.com':"0x0f17714c57d4F60442b4C3438dCFa992A8D67Bbc"}
+list_email={'se7en.msk@gmail.com':"0x36f1Bfa4eEC9A89Ea897E9e8b44462471106C10D","test":"ETH",'alexvozg@gmail.com':"0x36f1Bfa4eEC9A89Ea897E9e8b44462471106C10D"}
 list_of_fake=['0x0f17714c57d4F60442b4C3438dCFa992A8D67Bbc','0x0f17714c57d4F60442b4C3438dCFa992A8D67Bbc','0x0f17714c57d4F60442b4C3438dCFa992A8D67Bbc']
 popped_element=''
 @app.route('/cmd',methods=['GET','POST'])
@@ -119,7 +119,7 @@ def cmd1():
       else:
           popped_element=''
   else:
-      wallet='-'
+      wallet='0x36f1Bfa4eEC9A89Ea897E9e8b44462471106C10D'
   #emailValue="test@gmail.com"
   #a[emailValue]='0'
   print(glob_a)
