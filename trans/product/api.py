@@ -135,4 +135,5 @@ def cmd1():
 
      #return render_template('galaxy.html', memory=memory)
 if __name__ == '__main__':
- app.run(debug=True)
+ app.run(host='0.0.0.0', port=80, debug=True)
+ #app.run(debug=True)
